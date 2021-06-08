@@ -1,0 +1,174 @@
+header
+    background: #F9FDFF
+    margin: 0 0 120px 0
+    & li, a
+        &:hover
+            opacity: 0.8
+        &:focus
+            opacity: 0.6
+
+.header__wrapper
+    width: 100%
+    position: relative
+
+.header__block
+    display: flex
+    width: 100%
+    align-items: center
+    position: absolute
+    padding: 85px 0 0 0
+    & a
+        background: #F9FDFF
+        z-index: 1000
+        & img
+            margin: 0 138px 0 0
+            box-shadow: -1150px -176px 0 150px #F9FDFF
+
+.header__menu
+    display: flex
+    align-items: center
+    background: #F9FDFF
+    box-shadow: -75px -75px 0 75px #F9FDFF
+    transition: 0.3s
+    z-index: 100
+    & ul
+        margin: 0
+        padding: 0
+        list-style: none
+        & li
+            display: inline-block
+            & a 
+                color: #303032
+                font-family: "Open Sans", sans-serif
+                text-decoration: none
+                text-transform: uppercase
+            &:nth-child(1)
+                margin: 0 60px 0 0
+            &:nth-child(2)
+                margin: 0 63px 0 0
+
+.header__navigation
+    margin-left: auto
+    z-index: 1000
+    & a
+        background: transparent
+        &:nth-child(1) img
+            vertical-align: middle
+            margin: 0 18px 0 0
+        &:nth-child(2) img
+            vertical-align: middle
+            margin: 0
+            padding: 1px 10px 0 0
+        &:nth-child(2)
+            position: relative
+            &:after
+                content: '3'
+                display: block
+                position: absolute
+                color: #FFF
+                font-family: sans-serif
+                font-size: 12px
+                font-weight: 500
+                line-height: 18px
+                text-align: center
+                width: 18px
+                height: 18px
+                background: #313133
+                border-radius: 50%
+                top: -4px
+                right: 0px
+
+.header-slider
+    box-shadow: 500px 0px 0px 0px #FCEAE8
+    & .slick-dots
+        position: absolute
+        text-align: end
+        list-style: none
+        padding: 0
+        bottom: 25%
+        right: 0px
+        & button
+            border: none
+            outline: none
+            background: transparent
+            color: #0000004C
+            font-family: "Playfair Display", sans-serif
+            font-size: 20px
+            font-weight: 400
+            line-height: 29px
+            margin: 0 0 20px 0
+            padding: 0 20px 0 0
+            cursor: pointer
+            &::before
+                content: '0'
+    & .slick-active
+        & button
+            position: relative
+            color: #000
+            font-size: 40px
+            font-weight: 400
+            line-height: 58px
+            border-right: 2px solid #000000
+
+.header-slider__item
+    .header-slider__img
+        display: inline-block
+        position: relative
+        margin: 0 0 -6px 0
+        width: 45.548%
+        box-shadow: 300px 0px 0px 0px #FCEAE8
+        z-index: 2000
+        & img
+            width: 100%
+    
+.header-slider__content
+    display: inline-block
+    vertical-align: bottom
+    margin: 0 0 156px 0
+    width: 47%
+    & h1
+        color: #303032
+        font-family: "Playfair Display", sans-serif
+        font-size: 57px
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 82.65px
+        margin: 0 0 35px 0
+    & a
+        display: inline-block
+        color: #FFFFFF
+        background: #303032
+        text-decoration: none
+        text-transform: uppercase
+        font-family: "Open Sans", sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 21.79px
+        padding: 18px 82px 18px 80px
+        outline: none
+
+.header-slider__name
+    font-family: "Open Sans", sans-serif
+    font-size: 20px
+    font-weight: 400
+    line-height: 27.24px
+    margin: 0 0 10px 0
+
+.header-slider__price
+    display: block
+    color: #303032
+    font-family: "Open Sans"
+    font-size: 20px
+    font-weight: 400
+    line-height: 27.24px
+    margin: 0 0 38px 0
+    & p
+        color: #303032
+        display: inline-block
+        font-family: "Open Sans"
+        font-size: 30px
+        font-weight: 600
+        line-height: 40.85px
+        margin: 0 0 0 22px
+
+
