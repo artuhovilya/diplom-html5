@@ -32,16 +32,6 @@
                         <div class="header__burger">
                             <span></span>
                         </div>
-                        <div class="brg-menu-popup">
-                            <div class="menu-close">
-                                <div>
-                                    <img src="img/close.png" alt="">
-                                </div>
-                            </div>
-                            <a href="" class="link">мебель</a>
-                            <a href="" class="link">освещение</a>
-                            <a href="" class="link">текстиль</a>
-                        </div>
                     </div>
                 </div>
                 <div class="header-slider">
@@ -272,6 +262,15 @@
         <script src="slick/slick.min.js"></script>
 
         <script>
+            jQuery(document).ready(function ($) {
+                $('.header__burger').click(function (event) {
+                    $('.header__burger,.header__menu').toggleClass('active'); 
+                    $('body').toggleClass('lock');
+                });
+            });
+        </script>
+
+            <script>
             $(document).ready(function () {
                 $('.header-slider').slick({
                     vertical: true,

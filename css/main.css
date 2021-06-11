@@ -177,21 +177,6 @@ header li:focus, header a:focus {
   background: #FFF;
 }
 
-.brg-menu-popup {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-family: "open sans";
-  font-size: 18px;
-  z-index: 2;
-  background: #303032;
-  text-transform: uppercase;
-  padding: 25px;
-  transform: translateY(-102%);
-}
-
 .header-slider {
   box-shadow: 500px 0px 0px 0px #FCEAE8;
 }
