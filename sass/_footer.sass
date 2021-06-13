@@ -1,0 +1,90 @@
+.footer__block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    & a
+        &:hover
+            opacity: 0.8
+        &:focus
+            opacity: 0.6
+
+.footer__contacts
+    font-family: "Roboto", sans-serif
+    & img
+        margin: 0 0 31px 0
+        width: 15px
+        height: 17px
+    & div
+        display: flex
+        margin: 0 0 30px 0
+        & a
+            display: flex
+            color: #303032
+            margin: 0 50px 0 0
+            font-size: 16xp
+            font-weight: 400
+            line-height: 18.75px
+            text-decoration: none
+            & img
+                margin: 0 8px 0 0
+
+.footer__links
+    & ul
+        margin: 0
+        padding: 0
+        list-style: none
+        & li
+            display: inline-block
+            margin: 0 60px 0 0
+            &:last-child
+                margin: 0
+            & a
+                color: #303032
+                font-size: 14px
+                font-weight: 600
+                line-height: 21.61px
+                font-family: "Avenir Next", sans-serif
+                text-decoration: none
+                text-transform: uppercase
+
+.footer__copyrights
+    margin: 10px 0
+    color: #00000032
+    font-family: "Avenir Next", sans-serif
+    font-size: 10px
+    font-weight: 400
+    line-height: 15.44px
+    text-align: end
+
+
+@media (max-width: 1000px)
+    .footer__block
+        align-items: center
+
+    .footer__contacts
+        & div
+            display: flex
+            flex-direction: column
+            margin: 0
+            & a
+                margin: 0 50px 20px 0
+
+    .footer__links
+        & ul
+            & li
+                margin: 0 60px 20px 0
+
+@media (max-width: 600px)
+    .footer__block
+        flex-direction: column
+        align-items: flex-start
+    .footer__contacts
+        margin: 0 0 39px 0
+    .footer__links
+        & ul
+            & li
+                &:nth-child(2)
+                    margin-right: 27%
+    .footer__copyrights 
+        text-align: center
